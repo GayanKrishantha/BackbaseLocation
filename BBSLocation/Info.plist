@@ -55,9 +55,9 @@
 		</dict>
 	</array>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>BBCAlocation app use your location to improv the performance.</string>
+	<string>BBCLocation app use your location to improv the performance.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>BBCAlocation app use your location to improv the performance.</string>
+	<string>BBCLocation app use your location to improv the performance.</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

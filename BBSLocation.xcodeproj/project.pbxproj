@@ -17,6 +17,13 @@
 		A0178E471FE195FD00F918AB /* BBCMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E461FE195FD00F918AB /* BBCMapViewModel.swift */; };
 		A0178E4A1FE197AE00F918AB /* BBCCityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E491FE197AE00F918AB /* BBCCityModel.swift */; };
 		A0178E4C1FE197C200F918AB /* BBCMapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E4B1FE197C200F918AB /* BBCMapModel.swift */; };
+		A0178E4E1FE19F8B00F918AB /* BBCDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E4D1FE19F8B00F918AB /* BBCDataManager.swift */; };
+		A0178E501FE1A25600F918AB /* BBCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E4F1FE1A25600F918AB /* BBCExtension.swift */; };
+		A0178E521FE1A26800F918AB /* BBCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E511FE1A26800F918AB /* BBCConstants.swift */; };
+		A0178E541FE1A28200F918AB /* BBCCommonValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E531FE1A28200F918AB /* BBCCommonValidation.swift */; };
+		A0178E581FE1A6F600F918AB /* BBCCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E561FE1A6F600F918AB /* BBCCityCell.swift */; };
+		A0178E591FE1A6F600F918AB /* BBCCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0178E571FE1A6F600F918AB /* BBCCityCell.xib */; };
+		A0178E5B1FE1AB1F00F918AB /* BBCCompaser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E5A1FE1AB1F00F918AB /* BBCCompaser.swift */; };
 		A0324E4B1FE107A900ACCE31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0324E4A1FE107A900ACCE31 /* AppDelegate.swift */; };
 		A0324E501FE107A900ACCE31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0324E4E1FE107A900ACCE31 /* Main.storyboard */; };
 		A0324E531FE107A900ACCE31 /* BBSLocation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0324E511FE107A900ACCE31 /* BBSLocation.xcdatamodeld */; };
@@ -70,6 +77,13 @@
 		A0178E461FE195FD00F918AB /* BBCMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCMapViewModel.swift; sourceTree = "<group>"; };
 		A0178E491FE197AE00F918AB /* BBCCityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCCityModel.swift; sourceTree = "<group>"; };
 		A0178E4B1FE197C200F918AB /* BBCMapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCMapModel.swift; sourceTree = "<group>"; };
+		A0178E4D1FE19F8B00F918AB /* BBCDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCDataManager.swift; sourceTree = "<group>"; };
+		A0178E4F1FE1A25600F918AB /* BBCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCExtension.swift; sourceTree = "<group>"; };
+		A0178E511FE1A26800F918AB /* BBCConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCConstants.swift; sourceTree = "<group>"; };
+		A0178E531FE1A28200F918AB /* BBCCommonValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCCommonValidation.swift; sourceTree = "<group>"; };
+		A0178E561FE1A6F600F918AB /* BBCCityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCCityCell.swift; sourceTree = "<group>"; };
+		A0178E571FE1A6F600F918AB /* BBCCityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBCCityCell.xib; sourceTree = "<group>"; };
+		A0178E5A1FE1AB1F00F918AB /* BBCCompaser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCCompaser.swift; sourceTree = "<group>"; };
 		A0324E471FE107A900ACCE31 /* BBSLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBSLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0324E4A1FE107A900ACCE31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0324E4F1FE107A900ACCE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,6 +147,15 @@
 				A0178E4B1FE197C200F918AB /* BBCMapModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A0178E551FE1A6D200F918AB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A0178E561FE1A6F600F918AB /* BBCCityCell.swift */,
+				A0178E571FE1A6F600F918AB /* BBCCityCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A0324E3E1FE107A900ACCE31 = {
@@ -221,6 +244,7 @@
 			children = (
 				A0178E421FE195CB00F918AB /* BBCCityViewModel.swift */,
 				A0178E3A1FE193A400F918AB /* BBCCityViewController.swift */,
+				A0178E551FE1A6D200F918AB /* Cell */,
 			);
 			path = City;
 			sourceTree = "<group>";
@@ -271,6 +295,10 @@
 		A0324E981FE10A9300ACCE31 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A0178E4F1FE1A25600F918AB /* BBCExtension.swift */,
+				A0178E511FE1A26800F918AB /* BBCConstants.swift */,
+				A0178E531FE1A28200F918AB /* BBCCommonValidation.swift */,
+				A0178E5A1FE1AB1F00F918AB /* BBCCompaser.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -288,6 +316,7 @@
 		A0324EA21FE10AAA00ACCE31 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				A0178E4D1FE19F8B00F918AB /* BBCDataManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -406,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0178E591FE1A6F600F918AB /* BBCCityCell.xib in Resources */,
 				A0324E9E1FE10A9C00ACCE31 /* cities_search.json in Resources */,
 				A0324E921FE10A8600ACCE31 /* OpenSans-Italic.ttf in Resources */,
 				A0324E8F1FE10A8600ACCE31 /* OpenSans-BoldItalic.ttf in Resources */,
@@ -452,15 +482,21 @@
 				A0178E391FE1938E00F918AB /* BBCBaseViewController.swift in Sources */,
 				A0178E4A1FE197AE00F918AB /* BBCCityModel.swift in Sources */,
 				A0178E3B1FE193A400F918AB /* BBCCityViewController.swift in Sources */,
+				A0178E521FE1A26800F918AB /* BBCConstants.swift in Sources */,
 				A0178E411FE195A800F918AB /* BBCBaseViewModel.swift in Sources */,
 				A0324E531FE107A900ACCE31 /* BBSLocation.xcdatamodeld in Sources */,
 				A0178E3D1FE193B800F918AB /* BBCLoadingViewController.swift in Sources */,
+				A0178E581FE1A6F600F918AB /* BBCCityCell.swift in Sources */,
 				A0178E451FE195E600F918AB /* BBCLoadingViewModel.swift in Sources */,
 				A0178E431FE195CB00F918AB /* BBCCityViewModel.swift in Sources */,
 				A0178E471FE195FD00F918AB /* BBCMapViewModel.swift in Sources */,
 				A0324E4B1FE107A900ACCE31 /* AppDelegate.swift in Sources */,
 				A0178E4C1FE197C200F918AB /* BBCMapModel.swift in Sources */,
+				A0178E501FE1A25600F918AB /* BBCExtension.swift in Sources */,
+				A0178E4E1FE19F8B00F918AB /* BBCDataManager.swift in Sources */,
+				A0178E5B1FE1AB1F00F918AB /* BBCCompaser.swift in Sources */,
 				A0178E3F1FE193C700F918AB /* BBCMapViewController.swift in Sources */,
+				A0178E541FE1A28200F918AB /* BBCCommonValidation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,8 +663,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MZ74QV7ZHB;
+				DEVELOPMENT_TEAM = Q898BX59VV;
 				INFOPLIST_FILE = BBSLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gapstars.BBSLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -642,8 +679,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MZ74QV7ZHB;
+				DEVELOPMENT_TEAM = Q898BX59VV;
 				INFOPLIST_FILE = BBSLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gapstars.BBSLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
