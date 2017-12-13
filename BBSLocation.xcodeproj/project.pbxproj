@@ -306,9 +306,9 @@
 		A0324E991FE10A9C00ACCE31 /* Json */ = {
 			isa = PBXGroup;
 			children = (
+				A0324E9C1FE10A9C00ACCE31 /* cities_test.json */,
 				A0324E9A1FE10A9C00ACCE31 /* cities.json */,
 				A0324E9B1FE10A9C00ACCE31 /* cities_search.json */,
-				A0324E9C1FE10A9C00ACCE31 /* cities_test.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
