@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BBCLoadingViewController: UIViewController {
+class BBCLoadingViewController: BBCBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

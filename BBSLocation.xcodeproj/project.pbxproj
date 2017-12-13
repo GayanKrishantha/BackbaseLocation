@@ -200,8 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				A0324E7C1FE10A7200ACCE31 /* Base */,
-				A0324E7D1FE10A7200ACCE31 /* City */,
 				A0324E7E1FE10A7200ACCE31 /* Loading */,
+				A0324E7D1FE10A7200ACCE31 /* City */,
 				A0324E7F1FE10A7200ACCE31 /* Map */,
 			);
 			path = Controllers;

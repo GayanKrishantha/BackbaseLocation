@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BBCMapViewController: UIViewController {
+class BBCMapViewController: BBCBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
