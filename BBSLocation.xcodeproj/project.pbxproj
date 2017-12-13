@@ -15,6 +15,8 @@
 		A0178E431FE195CB00F918AB /* BBCCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E421FE195CB00F918AB /* BBCCityViewModel.swift */; };
 		A0178E451FE195E600F918AB /* BBCLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E441FE195E600F918AB /* BBCLoadingViewModel.swift */; };
 		A0178E471FE195FD00F918AB /* BBCMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E461FE195FD00F918AB /* BBCMapViewModel.swift */; };
+		A0178E4A1FE197AE00F918AB /* BBCCityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E491FE197AE00F918AB /* BBCCityModel.swift */; };
+		A0178E4C1FE197C200F918AB /* BBCMapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E4B1FE197C200F918AB /* BBCMapModel.swift */; };
 		A0324E4B1FE107A900ACCE31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0324E4A1FE107A900ACCE31 /* AppDelegate.swift */; };
 		A0324E501FE107A900ACCE31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0324E4E1FE107A900ACCE31 /* Main.storyboard */; };
 		A0324E531FE107A900ACCE31 /* BBSLocation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0324E511FE107A900ACCE31 /* BBSLocation.xcdatamodeld */; };
@@ -66,6 +68,8 @@
 		A0178E421FE195CB00F918AB /* BBCCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCCityViewModel.swift; sourceTree = "<group>"; };
 		A0178E441FE195E600F918AB /* BBCLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCLoadingViewModel.swift; sourceTree = "<group>"; };
 		A0178E461FE195FD00F918AB /* BBCMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCMapViewModel.swift; sourceTree = "<group>"; };
+		A0178E491FE197AE00F918AB /* BBCCityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCCityModel.swift; sourceTree = "<group>"; };
+		A0178E4B1FE197C200F918AB /* BBCMapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCMapModel.swift; sourceTree = "<group>"; };
 		A0324E471FE107A900ACCE31 /* BBSLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBSLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0324E4A1FE107A900ACCE31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0324E4F1FE107A900ACCE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0178E481FE1979700F918AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0178E491FE197AE00F918AB /* BBCCityModel.swift */,
+				A0178E4B1FE197C200F918AB /* BBCMapModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A0324E3E1FE107A900ACCE31 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +165,7 @@
 				A0324E981FE10A9300ACCE31 /* Helpers */,
 				A0324E991FE10A9C00ACCE31 /* Json */,
 				A0324EA21FE10AAA00ACCE31 /* Manager */,
+				A0178E481FE1979700F918AB /* Model */,
 				A0324EA51FE10AB900ACCE31 /* ViewModel */,
 				A0324EA31FE10AB100ACCE31 /* Info.plist */,
 				A0324E4E1FE107A900ACCE31 /* Main.storyboard */,
@@ -436,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0178E391FE1938E00F918AB /* BBCBaseViewController.swift in Sources */,
+				A0178E4A1FE197AE00F918AB /* BBCCityModel.swift in Sources */,
 				A0178E3B1FE193A400F918AB /* BBCCityViewController.swift in Sources */,
 				A0178E411FE195A800F918AB /* BBCBaseViewModel.swift in Sources */,
 				A0324E531FE107A900ACCE31 /* BBSLocation.xcdatamodeld in Sources */,
@@ -444,6 +459,7 @@
 				A0178E431FE195CB00F918AB /* BBCCityViewModel.swift in Sources */,
 				A0178E471FE195FD00F918AB /* BBCMapViewModel.swift in Sources */,
 				A0324E4B1FE107A900ACCE31 /* AppDelegate.swift in Sources */,
+				A0178E4C1FE197C200F918AB /* BBCMapModel.swift in Sources */,
 				A0178E3F1FE193C700F918AB /* BBCMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
