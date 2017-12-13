@@ -83,7 +83,7 @@ class BBCLoadingViewController: BBCBaseViewController {
         for i in 0..<Int(pageCount) {
             print(self.scrollView.frame.size.width)
             let image = UIImageView(frame: CGRect(x: self.scrollView.frame.size.width * CGFloat(i), y: 0, width: self.scrollView.frame.size.width, height: self.scrollView.frame.size.height))
-            image.image = UIImage(named: self.viewModel.retriveImageData()[i] )!
+            image.image = UIImage(named: self.viewModel.retriveImageData()[i])
             image.contentMode = UIViewContentMode.scaleAspectFit
             self.scrollView.addSubview(image)
         }

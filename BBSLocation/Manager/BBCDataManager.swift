@@ -37,7 +37,7 @@ class BBCDataManager {
                         
                         datatArray.sort(by: { $0.name! < $1.name! })
                         DispatchQueue.main.sync {
-                            return completion(true, datatArray)
+                           return completion(true, datatArray)
                         }
                     }
                 }

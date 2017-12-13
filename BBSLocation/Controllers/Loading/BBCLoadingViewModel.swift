@@ -13,7 +13,7 @@ class BBCLoadingViewModel {
     var imageData = [String]()
     
     func retriveImageData() -> [String] {
-        imageData = ["splash.png", "splash.png", "city_search.png", "search.png", "no_results.png", "name_searxch.png", "name_searxch.png", "pull_to_refresh.png", "map_standers.png", "map_em1.png", "map_em2.png", "map_em3.png", "map_em4.png", "map_em5.png"]
+        imageData = ["home.png", "splash.png", "summary.png", "city_search.png", "search.png", "no_results.png", "name_searxch.png", "pull_to_refresh.png", "map_standers.png", "map_em1.png", "map_em2.png", "map_em3.png", "map_em4.png", "map_em5.png"]
         
         return imageData
     }
