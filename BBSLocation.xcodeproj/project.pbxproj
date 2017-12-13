@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0178E391FE1938E00F918AB /* BBCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E381FE1938E00F918AB /* BBCBaseViewController.swift */; };
+		A0178E3B1FE193A400F918AB /* BBCCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E3A1FE193A400F918AB /* BBCCityViewController.swift */; };
+		A0178E3D1FE193B800F918AB /* BBCLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E3C1FE193B800F918AB /* BBCLoadingViewController.swift */; };
+		A0178E3F1FE193C700F918AB /* BBCMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0178E3E1FE193C700F918AB /* BBCMapViewController.swift */; };
 		A0324E4B1FE107A900ACCE31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0324E4A1FE107A900ACCE31 /* AppDelegate.swift */; };
 		A0324E501FE107A900ACCE31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0324E4E1FE107A900ACCE31 /* Main.storyboard */; };
 		A0324E531FE107A900ACCE31 /* BBSLocation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0324E511FE107A900ACCE31 /* BBSLocation.xcdatamodeld */; };
@@ -50,6 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0178E381FE1938E00F918AB /* BBCBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCBaseViewController.swift; sourceTree = "<group>"; };
+		A0178E3A1FE193A400F918AB /* BBCCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCCityViewController.swift; sourceTree = "<group>"; };
+		A0178E3C1FE193B800F918AB /* BBCLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCLoadingViewController.swift; sourceTree = "<group>"; };
+		A0178E3E1FE193C700F918AB /* BBCMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCMapViewController.swift; sourceTree = "<group>"; };
 		A0324E471FE107A900ACCE31 /* BBSLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBSLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0324E4A1FE107A900ACCE31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0324E4F1FE107A900ACCE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -180,6 +188,7 @@
 		A0324E7C1FE10A7200ACCE31 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A0178E381FE1938E00F918AB /* BBCBaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -187,6 +196,7 @@
 		A0324E7D1FE10A7200ACCE31 /* City */ = {
 			isa = PBXGroup;
 			children = (
+				A0178E3A1FE193A400F918AB /* BBCCityViewController.swift */,
 			);
 			path = City;
 			sourceTree = "<group>";
@@ -194,6 +204,7 @@
 		A0324E7E1FE10A7200ACCE31 /* Loading */ = {
 			isa = PBXGroup;
 			children = (
+				A0178E3C1FE193B800F918AB /* BBCLoadingViewController.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -201,6 +212,7 @@
 		A0324E7F1FE10A7200ACCE31 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				A0178E3E1FE193C700F918AB /* BBCMapViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -411,8 +423,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0178E391FE1938E00F918AB /* BBCBaseViewController.swift in Sources */,
+				A0178E3B1FE193A400F918AB /* BBCCityViewController.swift in Sources */,
 				A0324E531FE107A900ACCE31 /* BBSLocation.xcdatamodeld in Sources */,
+				A0178E3D1FE193B800F918AB /* BBCLoadingViewController.swift in Sources */,
 				A0324E4B1FE107A900ACCE31 /* AppDelegate.swift in Sources */,
+				A0178E3F1FE193C700F918AB /* BBCMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
