@@ -49,7 +49,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUm-gO-8hh">
-                                <rect key="frame" x="298" y="614" width="30" height="33"/>
+                                <rect key="frame" x="294" y="614" width="34" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="kSD-6d-3Ln"/>
                                 </constraints>
@@ -158,7 +158,7 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSz-ae-lbR">
-                                <rect key="frame" x="168.5" y="318.5" width="38.5" height="30"/>
+                                <rect key="frame" x="170" y="318.5" width="36" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="A2J-Sf-UgJ"/>
                                 </constraints>
