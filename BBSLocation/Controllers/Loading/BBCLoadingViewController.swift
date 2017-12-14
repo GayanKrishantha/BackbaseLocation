@@ -13,13 +13,14 @@ class BBCLoadingViewController: BBCBaseViewController {
     var viewModel:BBCLoadingViewModel = BBCLoadingViewModel()
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageController: UIPageControl!
+    @IBOutlet weak var scrolViewHolder: UIView!
     
     
     //MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.loadScrollView()
+        self.initialImplementation()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -50,6 +51,17 @@ class BBCLoadingViewController: BBCBaseViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: - Custom mnethods
+    func initialImplementation()  {
+        //Add shadow effect to the search bar
+        self.scrolViewHolder!.layer.shadowOffset = CGSize(width: 0, height: 0)
+        self.scrolViewHolder!.layer.shadowColor = UIColor.white.cgColor
+        self.scrolViewHolder!.layer.shadowRadius = 4
+        self.scrolViewHolder!.layer.shadowOpacity = 0.40
+        self.scrolViewHolder!.layer.masksToBounds = false
+        self.scrolViewHolder!.clipsToBounds = false
     }
     
     //MARK: Page tap action
@@ -90,6 +102,7 @@ class BBCLoadingViewController: BBCBaseViewController {
         for i in 0..<Int(pageCount) {
             //print(self.scrollView.frame.size.width)
             let image = UIImageView(frame: CGRect(x: self.scrollView.frame.size.width * CGFloat(i), y: 0, width: self.scrollView.frame.size.width, height: self.scrollView.frame.size.height))
+            image.layer.cornerRadius = 4
             image.image = UIImage(named: self.viewModel.retriveImageData()[i])
             image.contentMode = UIViewContentMode.scaleAspectFit
             self.scrollView.addSubview(image)
