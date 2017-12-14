@@ -42,8 +42,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="B05-Da-wkW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUm-gO-8hh">
-                                <rect key="frame" x="298" y="614" width="30" height="33"/>
+                                <rect key="frame" x="294" y="614" width="34" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="kSD-6d-3Ln"/>
                                 </constraints>
@@ -62,27 +65,30 @@
                                     <constraint firstAttribute="width" constant="255" id="iEe-xR-hXa"/>
                                 </constraints>
                             </pageControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B05-Da-wkW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiC-54-sj6">
-                                <rect key="frame" x="60" y="80" width="255" height="446"/>
+                                <rect key="frame" x="90" y="111" width="195" height="350"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eou-Ye-mSB">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="446"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="350"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="eou-Ye-mSB" secondAttribute="trailing" id="2W5-oe-JPu"/>
-                                    <constraint firstAttribute="bottom" secondItem="eou-Ye-mSB" secondAttribute="bottom" id="AeL-4v-9p8"/>
-                                    <constraint firstItem="eou-Ye-mSB" firstAttribute="top" secondItem="oiC-54-sj6" secondAttribute="top" id="IEY-S0-2MY"/>
-                                    <constraint firstItem="eou-Ye-mSB" firstAttribute="leading" secondItem="oiC-54-sj6" secondAttribute="leading" id="Rvq-6d-rfi"/>
+                                    <constraint firstItem="eou-Ye-mSB" firstAttribute="leading" secondItem="oiC-54-sj6" secondAttribute="leading" id="6V6-J7-CpD"/>
+                                    <constraint firstAttribute="trailing" secondItem="eou-Ye-mSB" secondAttribute="trailing" id="ijh-uw-tPB"/>
+                                    <constraint firstItem="eou-Ye-mSB" firstAttribute="top" secondItem="oiC-54-sj6" secondAttribute="top" id="m7D-hG-ONS"/>
+                                    <constraint firstAttribute="bottom" secondItem="eou-Ye-mSB" secondAttribute="bottom" id="mTt-2e-bML"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -93,22 +99,23 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="B05-Da-wkW" secondAttribute="trailing" id="5F4-JL-SLV"/>
-                            <constraint firstItem="oiC-54-sj6" firstAttribute="leading" secondItem="hrW-bV-jc1" secondAttribute="leading" id="8Ea-Ts-zKR"/>
                             <constraint firstAttribute="bottom" secondItem="DUm-gO-8hh" secondAttribute="bottom" constant="20" symbolic="YES" id="B60-5m-r2v"/>
+                            <constraint firstItem="hgu-GA-1h9" firstAttribute="trailing" secondItem="oiC-54-sj6" secondAttribute="trailing" constant="90" id="Khc-mj-VbL"/>
                             <constraint firstItem="B05-Da-wkW" firstAttribute="bottom" secondItem="hgu-GA-1h9" secondAttribute="bottom" id="Nt7-lR-zrV"/>
-                            <constraint firstItem="hrW-bV-jc1" firstAttribute="top" secondItem="oiC-54-sj6" secondAttribute="bottom" constant="20" id="PCt-DV-KE9"/>
                             <constraint firstAttribute="trailing" secondItem="DUm-gO-8hh" secondAttribute="trailing" constant="47" id="U7Q-mv-wHp"/>
-                            <constraint firstItem="oiC-54-sj6" firstAttribute="trailing" secondItem="hrW-bV-jc1" secondAttribute="trailing" id="ZcH-l6-mcN"/>
                             <constraint firstItem="DUm-gO-8hh" firstAttribute="top" secondItem="hrW-bV-jc1" secondAttribute="bottom" constant="31" id="aBq-zV-sCB"/>
                             <constraint firstItem="B05-Da-wkW" firstAttribute="leading" secondItem="5j8-1h-iE0" secondAttribute="leading" id="aG8-NU-NJT"/>
                             <constraint firstItem="DUm-gO-8hh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hgu-GA-1h9" secondAttribute="leading" id="drJ-Pk-3XX"/>
+                            <constraint firstItem="oiC-54-sj6" firstAttribute="leading" secondItem="hgu-GA-1h9" secondAttribute="leading" constant="90" id="jpr-Mw-kJO"/>
+                            <constraint firstItem="oiC-54-sj6" firstAttribute="top" secondItem="hgu-GA-1h9" secondAttribute="top" constant="91" id="mVn-0Q-w1O"/>
                             <constraint firstItem="B05-Da-wkW" firstAttribute="centerX" secondItem="hrW-bV-jc1" secondAttribute="centerX" id="orm-wE-JMc"/>
                             <constraint firstItem="B05-Da-wkW" firstAttribute="top" secondItem="5j8-1h-iE0" secondAttribute="top" id="pvs-yr-TVr"/>
-                            <constraint firstItem="oiC-54-sj6" firstAttribute="top" secondItem="hgu-GA-1h9" secondAttribute="top" constant="60" id="u78-Cg-CbQ"/>
+                            <constraint firstItem="hrW-bV-jc1" firstAttribute="top" secondItem="oiC-54-sj6" secondAttribute="bottom" constant="85" id="xMQ-C5-cY7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hgu-GA-1h9"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jtc-xy-KAt"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="pageController" destination="hrW-bV-jc1" id="Ttd-wq-CYX"/>
                         <outlet property="scrollView" destination="eou-Ye-mSB" id="gsL-fd-EhL"/>
@@ -116,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EhG-ny-lg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="246" y="95"/>
+            <point key="canvasLocation" x="245.59999999999999" y="94.902548725637189"/>
         </scene>
         <!--City View Controller-->
         <scene sceneID="enf-Ix-MzC">
@@ -313,9 +320,6 @@
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvQ-u8-Gga">
                                                 <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
-                                                <connections>
-                                                    <action selector="navigationBackButtonPressed:" destination="rm6-mc-0Of" eventType="touchUpInside" id="fEj-yW-Qdg"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -441,5 +445,6 @@
         <image name="Search" width="78" height="78"/>
         <image name="back" width="69" height="126"/>
         <image name="compass" width="64" height="64"/>
+        <image name="splash" width="240" height="400"/>
     </resources>
 </document>

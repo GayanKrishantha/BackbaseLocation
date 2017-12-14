@@ -235,7 +235,6 @@ extension BBCCityViewController : UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(viewModel.searchData.count)
         return viewModel.searchData.count
     }
     

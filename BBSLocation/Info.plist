@@ -20,14 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>BBCLocation app use your location to improv the performance.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>BBCLocation app use your location to improv the performance.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-Bold.ttf</string>
@@ -46,18 +42,24 @@
 		<dict>
 			<key>UIApplicationShortcutItemIconFile</key>
 			<string>quick_search</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Search Cities</string>
 			<key>UIApplicationShortcutItemSubtitle</key>
 			<string>Along with location</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Search Cities</string>
 			<key>UIApplicationShortcutItemType</key>
 			<string>be.thenerd.appshortcut.search-candidate</string>
 		</dict>
 	</array>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>BBCLocation app use your location to improv the performance.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>BBCLocation app use your location to improv the performance.</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarHidden</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
