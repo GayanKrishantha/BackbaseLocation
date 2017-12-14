@@ -20,6 +20,7 @@ class BBCCityViewController: BBCBaseViewController {
     @IBOutlet weak var validationLabel: UILabel!
     var refreshControl: UIRefreshControl!
     private var selectedIndex:Int = 0
+    let limitLength = BBCConstants.Charector.SEARCHBAR_LIMIT
     
     
     //Constants
@@ -205,6 +206,13 @@ extension BBCCityViewController: UITextFieldDelegate {
         (self.viewModel.searchData.count == 0) ? (self.validationLabel.isHidden = false) : (self.validationLabel.isHidden = true)
         textField.resignFirstResponder()
         return true
+    }
+    
+    //Limit search bar characters
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text else { return true }
+        let newLength = text.count + string.count - range.length
+        return newLength <= limitLength
     }
     
     /*

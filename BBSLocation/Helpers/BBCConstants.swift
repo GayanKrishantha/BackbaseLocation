@@ -32,6 +32,12 @@ public struct BBCConstants {
         static let HYBRID_BUTTON_TAG = 102
     }
     
+    struct Charector {
+        
+        static let SEARCHBAR_LIMIT = 35
+
+    }
+    
     struct CustomErrorCodes {
         
         static let NO_INTRNET = "No internet connection available!"
