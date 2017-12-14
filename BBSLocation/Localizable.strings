@@ -1,10 +1,16 @@
 //
-//  HVRCandidatesHeader.swift
-//  Recruiter
+//  BBCBaseViewModel.swift
+//  BBSLocation
 //
-//  Created by Gayan dias on 7/24/17.
-//  Copyright © 2017 Harver BV. All rights reserved.
+//  Created by Gayan dias on 12/13/17.
+//  Copyright © 2017 Gayan dias. All rights reserved.
 //
 
-"Empty validation" = "No Cities available.";
+"Empty_validation" = "No Cities available.";
+
+"Map_type_standerd" = "Standerd";
+
+"Map_type_satalite" = "Satalite";
+
+"Map_type_hybrid" = "Hybrid";
 

@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -18,23 +23,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="gDO-qD-TJQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="52k-7g-ES3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBSLocation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeG-Ly-a6v">
+                                <rect key="frame" x="129" y="323" width="118" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8NE-fy-ZI6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gDO-qD-TJQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9va-Al-cAm"/>
-                            <constraint firstItem="gDO-qD-TJQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="R9q-5Q-Eik"/>
-                            <constraint firstItem="gDO-qD-TJQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aiW-cO-bzj"/>
-                            <constraint firstItem="gDO-qD-TJQ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="pyo-OJ-Hgi"/>
+                            <constraint firstItem="GeG-Ly-a6v" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AQL-zj-esu"/>
+                            <constraint firstItem="52k-7g-ES3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="O6D-MC-GbK"/>
+                            <constraint firstItem="GeG-Ly-a6v" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="TnN-io-pD0"/>
+                            <constraint firstItem="52k-7g-ES3" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aWP-iQ-L4i"/>
+                            <constraint firstItem="52k-7g-ES3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="etd-TO-xOf"/>
+                            <constraint firstItem="52k-7g-ES3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="juq-jn-vMS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-534" y="373"/>
+            <point key="canvasLocation" x="-535.20000000000005" y="372.86356821589209"/>
         </scene>
     </scenes>
     <resources>

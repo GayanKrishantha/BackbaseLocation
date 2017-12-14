@@ -36,8 +36,12 @@ class BBCCityViewController: BBCBaseViewController {
         self.nibRegistration()
         
         // Check forceTouch avalability in devices
-        if(traitCollection.forceTouchCapability == .available) {
-            registerForPreviewing(with: self, sourceView: collectionView)
+        if #available(iOS 9.0, *) {
+            if(traitCollection.forceTouchCapability == .available) {
+                registerForPreviewing(with: self, sourceView: collectionView)
+            }
+        } else {
+            // Fallback on earlier versions
         }
         
         //Notify each text changes in text field
@@ -105,10 +109,14 @@ class BBCCityViewController: BBCBaseViewController {
         refreshControl = UIRefreshControl()
         refreshControl?.attributedTitle = NSAttributedString(string: lastRefreshTime)
         refreshControl?.addTarget(self, action: #selector(self.refreshDate), for: UIControlEvents.valueChanged)
-        collectionView.refreshControl = refreshControl
+        if #available(iOS 10.0, *) {
+            collectionView.refreshControl = refreshControl
+        } else {
+            // Fallback on earlier versions
+        }
         
         //Access the String file
-        validationLabel.text = NSLocalizedString("Empty validation", comment: "")
+        validationLabel.text = NSLocalizedString("Empty_validation", comment: "")
     }
     
     // Pull to refresh date showing and set the animation
@@ -125,9 +133,13 @@ class BBCCityViewController: BBCBaseViewController {
             return
         }
         if UIApplication.shared.canOpenURL(profileUrl) {
-            UIApplication.shared.open(profileUrl, completionHandler: { (success) in
-                //print(" Profile Settings opened: \(success)")
-            })
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(profileUrl, completionHandler: { (success) in
+                    //print(" Profile Settings opened: \(success)")
+                })
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
     

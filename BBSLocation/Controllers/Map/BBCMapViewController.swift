@@ -22,9 +22,6 @@ class BBCMapViewController: BBCBaseViewController {
     @IBOutlet weak var navigationView: UIView!
     private var locationManager: CLLocationManager!
     private var currentLocation: [CLLocation]!
-    var locationsArray: [CLLocation] = []
-    //var currentLocation = locations
-    //var locationManager = manager
     
     
     //MARK: - View life cycle
@@ -119,6 +116,11 @@ class BBCMapViewController: BBCBaseViewController {
         navigationView!.layer.masksToBounds = false
         navigationView!.clipsToBounds = false
         
+        //Access the String file
+        standard.setTitle(NSLocalizedString("Map_type_standerd", comment: ""), for: UIControlState.normal)
+        satellite.setTitle(NSLocalizedString("Map_type_satalite", comment: ""), for: UIControlState.normal)
+        hybrid.setTitle(NSLocalizedString("Map_type_hybrid", comment: ""), for: UIControlState.normal)
+        
         //Set the button tag for changing the map type
         standard.tag = BBCConstants.Tags.STANDERS_BUTTON_TAG
         satellite.tag = BBCConstants.Tags.SATALITE_BUTTON_TAG
@@ -190,9 +192,13 @@ class BBCMapViewController: BBCBaseViewController {
             return
         }
         if UIApplication.shared.canOpenURL(profileUrl) {
-            UIApplication.shared.open(profileUrl, completionHandler: { (success) in
-                //print(" Profile Settings opened: \(success)")
-            })
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(profileUrl, completionHandler: { (success) in
+                    //print(" Profile Settings opened: \(success)")
+                })
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
     
@@ -273,17 +279,10 @@ class BBCMapViewController: BBCBaseViewController {
 extension BBCMapViewController : CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = locations
-        //locationsArray.append(locations[0])
         let city = viewModel?.city?.name ?? ""
         let country = viewModel?.city?.country ?? ""
         let passedLat:Double = (viewModel?.city?.location?.lat)!
         let passedLon:Double = (viewModel?.city?.location?.lat)!
-        
-        /*print("\(locations[0])")
-         print("\(locations[0].timestamp)")
-         print("\(locations[0].speed)")
-         print("\(locations[0].course)")
-         print("\(String(describing: locations[0].floor))")*/
         
         //Set the location title
         headerLabel.text = city+", "+country
@@ -307,18 +306,6 @@ extension BBCMapViewController : CLLocationManagerDelegate {
         myAnnotation.title = city
         myAnnotation.subtitle = country
         mapView.addAnnotation(myAnnotation)
-        
-        //Show location Path
-        /*if (locationsArray.count > 1){
-         let sourceIndex = locationsArray.count - 1
-         let destinationIndex = locationsArray.count - 2
-         
-         let c1 = locationsArray[sourceIndex].coordinate
-         let c2 = locationsArray[destinationIndex].coordinate
-         var a = [c1, c2]
-         let polyline = MKPolyline(coordinates: &a, count: a.count)
-         mapView.add(polyline)
-         }*/
         
         //Set the annotation
         mapView.setRegion(region, animated: false)
@@ -395,11 +382,4 @@ extension BBCMapViewController: MKMapViewDelegate {
         annotationView!.image = pinImage
         return annotationView
     }
-    
-    /*func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-     let renderer = MKPolylineRenderer(polyline: overlay as! MKPolyline)
-     renderer.strokeColor = UIColor.blue
-     renderer.lineWidth = 4
-     return renderer
-     }*/
 }

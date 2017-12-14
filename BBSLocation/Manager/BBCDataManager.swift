@@ -21,6 +21,7 @@ class BBCDataManager {
                 
                 //JSON data validation
                 var datatArray = [BBCCityModel]()
+                var tempArray = [BBCCityModel]()
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                 if let jsonResult = jsonResult as? Dictionary<String, Any>,
@@ -30,13 +31,15 @@ class BBCDataManager {
                         for club in data {
                             if let clubDictionary = club as? [String: Any] {
                                 let dd = BBCCityModel(dic: clubDictionary)
-                                datatArray.append(dd)
-                                //datatArray.sort(by: { $0.name! < $1.name! })
+                                tempArray.append(dd)
                             }
                         }
                         
-                        datatArray.sort(by: { $0.name! < $1.name! })
+                        //Array sorting
+                        tempArray.sort(by: { $0.name! < $1.name! })
+                        
                         DispatchQueue.main.sync {
+                            datatArray = tempArray
                            return completion(true, datatArray)
                         }
                     }

@@ -12,14 +12,13 @@ public struct BBCConstants {
     
     struct Messages {
         
-        static let WELCOME_MESSAGE = "Welcome BBCLocation"
+        static let WELCOME_MESSAGE = "Welcome BBSLocation"
     }
     
     struct Colors {
         
         static let APP_BACKGROUND_COLOR = "EFF1F5"
         static let PROGRESSVIEW_UNFILLED_COLOR = "E1E2E4"
-        static let STAR_FILLED_COLOR = "ED8A1A"
         static let PROGRESSVIEW_RED_COLOR = "FA2A1C"
         static let PROGRESSVIEW_GREEN_COLOR = "26AB5E"
         static let CIRCULE_BLUE_COLOR = "1685DF"

@@ -8,8 +8,10 @@
 
 import UIKit
 
+@available(iOS 9.0, *)
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
+@available(iOS 9.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -29,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             performShortcutDelegate = false
         }
+
         
         // Override point for customization after application launch.
         return performShortcutDelegate
@@ -67,6 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     //MARK: - Quick action
+    @available(iOS 9.0, *)
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
         completionHandler(handleShortcut(shortcutItem) )
     }
@@ -74,6 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /*
      Handel 3D funtion
      */
+    @available(iOS 9.0, *)
     func handleShortcut( _ shortcutItem:UIApplicationShortcutItem ) -> Bool {
         
         var succeeded = false
