@@ -340,20 +340,15 @@ extension BBCMapViewController : CLLocationManagerDelegate {
     internal func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
         case .notDetermined:
-            // If status has not yet been determied, ask for authorization
             manager.requestWhenInUseAuthorization()
-            //manager.requestAlwaysAuthorization()
             break
         case .authorizedWhenInUse:
-            // If authorized when in use
             manager.startUpdatingLocation()
             break
         case .authorizedAlways:
-            // If always authorized
             manager.startUpdatingLocation()
             break
         case .restricted, .denied :
-            // If restricted by e.g. parental controls. User can't enable Location Services
             self.showErrorAlertPopup(title: BBCConstants.CustomErrorCodes.LOCATION_SERVICE ,message: BBCConstants.CustomErrorCodes.LOCATION_SERVICE_DEFINETION, okButtonTitle: BBCConstants.CustomErrorCodes.ALERT_SETTINGS_BUTTON, cancelButtonTitle: BBCConstants.CustomErrorCodes.ALERT_SETTINGS_CANCEL)
             break
         }
@@ -361,7 +356,6 @@ extension BBCMapViewController : CLLocationManagerDelegate {
 }
 
 extension BBCMapViewController: MKMapViewDelegate {
-    //Add anotation for the selected location
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if !(annotation is MKPointAnnotation) {
             return nil
