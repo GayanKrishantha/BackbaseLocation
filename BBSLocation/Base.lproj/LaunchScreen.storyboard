@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,14 +20,14 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="52k-7g-ES3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="52k-7g-ES3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBSLocation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeG-Ly-a6v">
-                                <rect key="frame" x="129" y="323" width="118" height="21"/>
+                                <rect key="frame" x="125.33333333333334" y="395.66666666666669" width="124.33333333333334" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8NE-fy-ZI6"/>
                                 </constraints>
@@ -39,7 +39,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GeG-Ly-a6v" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AQL-zj-esu"/>
-                            <constraint firstItem="52k-7g-ES3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="O6D-MC-GbK"/>
+                            <constraint firstItem="52k-7g-ES3" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="O6D-MC-GbK"/>
                             <constraint firstItem="GeG-Ly-a6v" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="TnN-io-pD0"/>
                             <constraint firstItem="52k-7g-ES3" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aWP-iQ-L4i"/>
                             <constraint firstItem="52k-7g-ES3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="etd-TO-xOf"/>
@@ -50,10 +50,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-535.20000000000005" y="372.86356821589209"/>
+            <point key="canvasLocation" x="-536.79999999999995" y="370.93596059113304"/>
         </scene>
     </scenes>
     <resources>
-        <image name="splash" width="240" height="400"/>
+        <image name="splash" width="600" height="960"/>
     </resources>
 </document>
