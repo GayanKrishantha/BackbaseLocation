@@ -8,12 +8,14 @@
 
 import Foundation
 
-class BBCCityModel {
+struct BBCCityModel {
     
     var country: String? = ""
     var name: String? = ""
     var _id: Int? = 0
     var location: BBCMapModel?
+    var age: Int? = 10
+    
     
     init(dic: Dictionary<String, Any>) {
         
@@ -21,6 +23,9 @@ class BBCCityModel {
         self.name = dic ["name"] as? String
         self._id = dic ["_id"] as? Int
         self.country = dic ["country"] as? String
+        self.age = dic ["age"] as? Int
         self.location = BBCMapModel(dictionary : dic ["coord"] as! [String : Any])
     }
 }
+
+

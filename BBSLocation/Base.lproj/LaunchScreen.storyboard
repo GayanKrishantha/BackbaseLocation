@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBSLocation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeG-Ly-a6v">
-                                <rect key="frame" x="129" y="395.66666666666669" width="118" height="21"/>
+                                <rect key="frame" x="128.66666666666666" y="395.66666666666669" width="118" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8NE-fy-ZI6"/>
                                 </constraints>

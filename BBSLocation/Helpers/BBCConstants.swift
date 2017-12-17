@@ -38,6 +38,14 @@ public struct BBCConstants {
 
     }
     
+    struct JsonReferenceType {
+        
+        static let CITY = "cities"
+        static let XCT_ORIGINAL = "test_cities_original"
+        static let XCT_SORTED = "test_cities_sorted"
+        static let XCT_UNSORTED = "test_cities_unsorted"
+    }
+    
     struct CustomErrorCodes {
         
         static let NO_INTRNET = "No internet connection available!"

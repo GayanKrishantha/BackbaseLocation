@@ -23,7 +23,7 @@ class BBCCityViewModel {
         self.data.removeAll()
         self.searchData.removeAll()
         
-        BBCDataManager.sharedInstance.fetchLocation { (status, resource) in
+        BBCDataManager.sharedInstance.fetchLocation(jsonType: BBCConstants.JsonReferenceType.CITY) { (status, resource) in
             if status {
                 guard let resource = resource else {
                     return completion(false)
@@ -48,29 +48,18 @@ class BBCCityViewModel {
     }
     
     /*
-     City dort funtion has inplemented here
+     Sort funtion has inplemented here
      */
     func sortByName(searchString:String, completion:@escaping() -> ()) {
         //Ermove element befor the search
         self.searchData.removeAll()
         
-        if !(searchString.isEmpty) {
-            DispatchQueue.global().async {
-                let result = self.data.filter {($0.name?.lowercased().hasPrefix(searchString))! }
-                DispatchQueue.main.sync {
-                    self.searchData = result
-                    completion()
-                }
-            }
-        }else {
-            DispatchQueue.global().async {
-                self.data.sort(by: { $0.name! < $1.name! })
-                DispatchQueue.main.sync {
-                    self.searchData = self.data
-                    completion()
-                }
+        DispatchQueue.global().async {
+            let result = self.data.filter {($0.name?.lowercased().hasPrefix(searchString))! }
+            DispatchQueue.main.sync {
+                self.searchData = result
+                completion()
             }
         }
     }
-    
 }

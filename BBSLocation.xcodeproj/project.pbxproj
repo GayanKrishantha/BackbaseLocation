@@ -43,10 +43,14 @@
 		A0324E961FE10A8600ACCE31 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0324E8B1FE10A8600ACCE31 /* OpenSans-SemiBold.ttf */; };
 		A0324E971FE10A8600ACCE31 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0324E8C1FE10A8600ACCE31 /* OpenSans-SemiBoldItalic.ttf */; };
 		A0324E9D1FE10A9C00ACCE31 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = A0324E9A1FE10A9C00ACCE31 /* cities.json */; };
-		A0324E9E1FE10A9C00ACCE31 /* cities_search.json in Resources */ = {isa = PBXBuildFile; fileRef = A0324E9B1FE10A9C00ACCE31 /* cities_search.json */; };
-		A0324E9F1FE10A9C00ACCE31 /* cities_test.json in Resources */ = {isa = PBXBuildFile; fileRef = A0324E9C1FE10A9C00ACCE31 /* cities_test.json */; };
 		A0324EA11FE10AA300ACCE31 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0324EA01FE10AA300ACCE31 /* Localizable.strings */; };
 		A0324EA41FE10AB100ACCE31 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0324EA31FE10AB100ACCE31 /* Info.plist */; };
+		A06169D41FE3BF6D00AF8D5C /* test_cities_original.json in Resources */ = {isa = PBXBuildFile; fileRef = A06169D11FE3BF6D00AF8D5C /* test_cities_original.json */; };
+		A06169D51FE3BF6D00AF8D5C /* testcities_sorted.json in Resources */ = {isa = PBXBuildFile; fileRef = A06169D21FE3BF6D00AF8D5C /* testcities_sorted.json */; };
+		A06169D61FE3BF6D00AF8D5C /* test_cities_unsorted.json in Resources */ = {isa = PBXBuildFile; fileRef = A06169D31FE3BF6D00AF8D5C /* test_cities_unsorted.json */; };
+		A0DD63371FE66FB0009257F3 /* test_cities_original.json in Resources */ = {isa = PBXBuildFile; fileRef = A0DD63341FE66FAF009257F3 /* test_cities_original.json */; };
+		A0DD63381FE66FB0009257F3 /* test_cities_sorted.json in Resources */ = {isa = PBXBuildFile; fileRef = A0DD63351FE66FAF009257F3 /* test_cities_sorted.json */; };
+		A0DD63391FE66FB0009257F3 /* test_cities_unsorted.json in Resources */ = {isa = PBXBuildFile; fileRef = A0DD63361FE66FAF009257F3 /* test_cities_unsorted.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,10 +113,14 @@
 		A0324E8B1FE10A8600ACCE31 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		A0324E8C1FE10A8600ACCE31 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		A0324E9A1FE10A9C00ACCE31 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
-		A0324E9B1FE10A9C00ACCE31 /* cities_search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities_search.json; sourceTree = "<group>"; };
-		A0324E9C1FE10A9C00ACCE31 /* cities_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities_test.json; sourceTree = "<group>"; };
 		A0324EA01FE10AA300ACCE31 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A0324EA31FE10AB100ACCE31 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A06169D11FE3BF6D00AF8D5C /* test_cities_original.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_cities_original.json; sourceTree = "<group>"; };
+		A06169D21FE3BF6D00AF8D5C /* testcities_sorted.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testcities_sorted.json; sourceTree = "<group>"; };
+		A06169D31FE3BF6D00AF8D5C /* test_cities_unsorted.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_cities_unsorted.json; sourceTree = "<group>"; };
+		A0DD63341FE66FAF009257F3 /* test_cities_original.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_cities_original.json; sourceTree = "<group>"; };
+		A0DD63351FE66FAF009257F3 /* test_cities_sorted.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_cities_sorted.json; sourceTree = "<group>"; };
+		A0DD63361FE66FAF009257F3 /* test_cities_unsorted.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_cities_unsorted.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,13 +191,12 @@
 			children = (
 				A0324E4A1FE107A900ACCE31 /* AppDelegate.swift */,
 				A0324E7B1FE10A7200ACCE31 /* Controllers */,
-				A0324E801FE10A7C00ACCE31 /* CustomView */,
 				A0324E811FE10A8500ACCE31 /* Fonts */,
 				A0324E981FE10A9300ACCE31 /* Helpers */,
 				A0324E991FE10A9C00ACCE31 /* Json */,
+				A0DD63331FE66FAF009257F3 /* UnitTestJson */,
 				A0324EA21FE10AAA00ACCE31 /* Manager */,
 				A0178E481FE1979700F918AB /* Model */,
-				A0324EA51FE10AB900ACCE31 /* ViewModel */,
 				A0324E561FE107A900ACCE31 /* LaunchScreen.storyboard */,
 				A0324EA31FE10AB100ACCE31 /* Info.plist */,
 				A0324E4E1FE107A900ACCE31 /* Main.storyboard */,
@@ -204,6 +211,7 @@
 		A0324E611FE107A900ACCE31 /* BBSLocationTests */ = {
 			isa = PBXGroup;
 			children = (
+				A06169CA1FE3BEE700AF8D5C /* Test Json */,
 				A0324E621FE107A900ACCE31 /* BBSLocationTests.swift */,
 				A0324E641FE107A900ACCE31 /* Info.plist */,
 			);
@@ -267,13 +275,6 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
-		A0324E801FE10A7C00ACCE31 /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomView;
-			sourceTree = "<group>";
-		};
 		A0324E811FE10A8500ACCE31 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,9 +307,7 @@
 		A0324E991FE10A9C00ACCE31 /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				A0324E9C1FE10A9C00ACCE31 /* cities_test.json */,
 				A0324E9A1FE10A9C00ACCE31 /* cities.json */,
-				A0324E9B1FE10A9C00ACCE31 /* cities_search.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -321,11 +320,25 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		A0324EA51FE10AB900ACCE31 /* ViewModel */ = {
+		A06169CA1FE3BEE700AF8D5C /* Test Json */ = {
 			isa = PBXGroup;
 			children = (
+				A06169D11FE3BF6D00AF8D5C /* test_cities_original.json */,
+				A06169D31FE3BF6D00AF8D5C /* test_cities_unsorted.json */,
+				A06169D21FE3BF6D00AF8D5C /* testcities_sorted.json */,
 			);
-			path = ViewModel;
+			name = "Test Json";
+			path = "BBSLocation/Test Json";
+			sourceTree = SOURCE_ROOT;
+		};
+		A0DD63331FE66FAF009257F3 /* UnitTestJson */ = {
+			isa = PBXGroup;
+			children = (
+				A0DD63341FE66FAF009257F3 /* test_cities_original.json */,
+				A0DD63351FE66FAF009257F3 /* test_cities_sorted.json */,
+				A0DD63361FE66FAF009257F3 /* test_cities_unsorted.json */,
+			);
+			path = UnitTestJson;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,10 +448,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DD63391FE66FB0009257F3 /* test_cities_unsorted.json in Resources */,
 				A0178E591FE1A6F600F918AB /* BBCCityCell.xib in Resources */,
-				A0324E9E1FE10A9C00ACCE31 /* cities_search.json in Resources */,
 				A0324E921FE10A8600ACCE31 /* OpenSans-Italic.ttf in Resources */,
 				A0324E8F1FE10A8600ACCE31 /* OpenSans-BoldItalic.ttf in Resources */,
+				A0DD63371FE66FB0009257F3 /* test_cities_original.json in Resources */,
 				A0324E8D1FE10A8600ACCE31 /* LICENSE.txt in Resources */,
 				A0324E901FE10A8600ACCE31 /* OpenSans-ExtraBold.ttf in Resources */,
 				A0324E581FE107A900ACCE31 /* LaunchScreen.storyboard in Resources */,
@@ -447,12 +461,12 @@
 				A0324E961FE10A8600ACCE31 /* OpenSans-SemiBold.ttf in Resources */,
 				A0324EA41FE10AB100ACCE31 /* Info.plist in Resources */,
 				A0324E551FE107A900ACCE31 /* Assets.xcassets in Resources */,
-				A0324E9F1FE10A9C00ACCE31 /* cities_test.json in Resources */,
 				A0324E8E1FE10A8600ACCE31 /* OpenSans-Bold.ttf in Resources */,
 				A0324E501FE107A900ACCE31 /* Main.storyboard in Resources */,
 				A0324EA11FE10AA300ACCE31 /* Localizable.strings in Resources */,
 				A0324E931FE10A8600ACCE31 /* OpenSans-Light.ttf in Resources */,
 				A0324E951FE10A8600ACCE31 /* OpenSans-Regular.ttf in Resources */,
+				A0DD63381FE66FB0009257F3 /* test_cities_sorted.json in Resources */,
 				A0324E971FE10A8600ACCE31 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				A0324E911FE10A8600ACCE31 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 			);
@@ -462,6 +476,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06169D61FE3BF6D00AF8D5C /* test_cities_unsorted.json in Resources */,
+				A06169D41FE3BF6D00AF8D5C /* test_cities_original.json in Resources */,
+				A06169D51FE3BF6D00AF8D5C /* testcities_sorted.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

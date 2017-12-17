@@ -124,6 +124,7 @@ class BBCCityViewController: BBCBaseViewController {
     @objc func refreshDate(sender:AnyObject) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             if (self.refreshControl?.isRefreshing)! {
+                self.collectionView.reloadData()
                 self.refreshControl?.endRefreshing()
             }
         }
@@ -201,9 +202,14 @@ extension BBCCityViewController: UITextFieldDelegate {
     
     //called when 'Done' key pressed.
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.viewModel.searchData = self.viewModel.data
-        self.collectionView.reloadData()
-        (self.viewModel.searchData.count == 0) ? (self.validationLabel.isHidden = false) : (self.validationLabel.isHidden = true)
+        self.activityIndicator.startAnimating()
+        self.viewModel.sortByName(searchString: "", completion: {
+            self.viewModel.searchData = self.viewModel.data
+            self.collectionView.reloadData()
+            self.searchFieldImage.isHidden = false
+            (self.viewModel.searchData.count == 0) ? (self.validationLabel.isHidden = false) : (self.validationLabel.isHidden = true)
+            (self.viewModel.searchData.count == 0) ? (self.activityIndicator.stopAnimating()) : (self.activityIndicator.startAnimating())
+        })
         textField.resignFirstResponder()
         return true
     }
@@ -227,16 +233,16 @@ extension BBCCityViewController: UITextFieldDelegate {
                 self.collectionView.reloadData()
                 self.searchFieldImage.isHidden = true
                 (self.viewModel.searchData.count == 0) ? (self.validationLabel.isHidden = false) : (self.validationLabel.isHidden = true)
-                self.activityIndicator.stopAnimating()
+                (self.viewModel.searchData.count == 0) ? (self.activityIndicator.stopAnimating()) : (self.activityIndicator.startAnimating())
             })
             
         }else {
             self.viewModel.sortByName(searchString: search!, completion: {
                 self.viewModel.searchData = self.viewModel.data
                 self.collectionView.reloadData()
-                (self.viewModel.searchData.count == 0) ? (self.validationLabel.isHidden = false) : (self.validationLabel.isHidden = true)
                 self.searchFieldImage.isHidden = false
-                self.activityIndicator.stopAnimating()
+                (self.viewModel.searchData.count == 0) ? (self.validationLabel.isHidden = false) : (self.validationLabel.isHidden = true)
+                (self.viewModel.searchData.count == 0) ? (self.activityIndicator.stopAnimating()) : (self.activityIndicator.startAnimating())
             })
         }
     }

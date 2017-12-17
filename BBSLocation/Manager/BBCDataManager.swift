@@ -13,7 +13,7 @@ class BBCDataManager {
     static let sharedInstance = BBCDataManager()
     
     //Get locations from the local json file
-    func fetchLocation(completion:@escaping(_ status: Bool, _ location: [BBCCityModel]?)->()) {
+    func fetchLocation(jsonType:String, completion:@escaping(_ status: Bool, _ location: [BBCCityModel]?)->()) {
         
         if let path = Bundle.main.path(forResource: "cities", ofType: "json") {
             
